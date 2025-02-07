@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: monospace;
+        }
+
+        input [type=text] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: white;
+            color: white;
+        }
+
+        .button {
+            background-color: #04AA6D; /* Green */
+            border: none;
+            color: cyan;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: cyan; 
+            color: white; 
+            border: 2px solid cyan;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: cyan;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>INST377 - Lab 2 - Contact Me</h1>
+    <form name="contactForm" method="get" action="INST377-Lab 2 - FormSuccess.html">
+        <div class="contactMe">
+            <h2><label for="Name">Name:</label></h2>
+            <input type="text" id="Name" name="name" required style="height: 30px;">
+            <br>
+            <h2><label for="email">Email:</label></h2>
+            <input type="text" id="email" name="email" required style="height: 30px;">
+            <br>
+            <hr>
+        </div>       
+        <button class="button button1">Submit</button>
+    </form>
+</body>
+
+</html>
